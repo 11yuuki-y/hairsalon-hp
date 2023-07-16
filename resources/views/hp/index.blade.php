@@ -16,7 +16,7 @@
     レディース メンズ、ジャンル問わず大歓迎！インスタ「@m_a_c_oita」スタイル写真や情報を要チェック">
     <!-- <meta property="og:image" content="URL" /> -->
     <meta property="og:locale" content="ja_JP">
-    
+
 </head>
 
 <body>
