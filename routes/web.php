@@ -13,11 +13,13 @@ use App\Http\Controllers\indexController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 /*
 Route::get('/', function () {
     return view('welcome');
 });
 */
+
 
 Route::get('/', [indexController::class, 'index']);
 
@@ -25,3 +27,13 @@ Route::get('/', [indexController::class, 'index']);
 // トップページ
 Route::get('/hp', [indexController::class, 'index'])->name('hp.index');
 
+
+// menuページ
+Route::get('/hp/menu', [indexController::class, 'menu'])->name('hp.menu');
+
+// staffページ
+Route::get('hp/staff', [indexController::class, 'staff'])->name('hp.staff');
+
+/*
+Route::resource('hp', indexController::class);
+*/
