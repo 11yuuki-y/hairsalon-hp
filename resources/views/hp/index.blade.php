@@ -75,7 +75,7 @@
                 <li class="style-img7"><img src="{{ asset('img/') }}"></li>
                 <li class="style-img8"><img src="{{ asset('img/') }}"></li>
             </ui>
-            <p class="url"><a href="https://instagram.com/m_a_c_oita?igshid=MzRlODBiNWFlZA==" class="page-url">Instagram<img src="{{ asset('img/insta.11.jpg') }}"></a></p>
+            <p class="url"><a href="https://instagram.com/m_a_c_oita?igshid=MzRlODBiNWFlZA==" class="page-url" target="_blank" rel="noopener noreferrer">Instagram<img src="{{ asset('img/insta.11.jpg') }}"></a></p>
         </section>
 
         <section id="Concept">
@@ -116,21 +116,21 @@
                 <div class="menu-img">
                     <img src="{{asset('img/') }}">
                 </div>
-                <p class="menu-url"><a href="{{ route('hp.menu') }} " class="page-url">Menu</a></p>
+                <p class="menu-url"><a href="{{ route('hp.menu') }} " class="page-url" target="_blank" rel="noopener noreferrer">Menu<img src="{{ asset('img/tabu.11.jpg') }}"></a></p>
             </section>
 
             <section id="Staff">
                 <div class="staff-img">
                     <img src="{{asset('img/') }}">
                 </div>
-                <p class="staff-url"><a href="{{ route('hp.staff') }}" class="page-url">Staff</a></p>
+                <p class="staff-url"><a href="{{ route('hp.staff') }}" class="page-url" target="_blank" rel="noopener noreferrer">Staff<img src="{{ asset('img/tabu.11.jpg') }}"></a></p>
             </section>
 
             <section id="Nail">
                 <div class="nail-img">
                     <img src="{{asset('img/') }}">
                 </div>
-                <p class="nail-url"><a href="https://instagram.com/m_and_co.nail?igshid=MzRlODBiNWFlZA==" class="page-url">Nail<img src="{{ asset('img/insta.11.jpg') }}"></a></p>
+                <p class="nail-url"><a href="https://instagram.com/m_and_co.nail?igshid=MzRlODBiNWFlZA==" class="page-url" target="_blank" rel="noopener noreferrer">Nail<img src="{{ asset('img/insta.11.jpg') }}"></a></p>
             </section>
         </div>
 
@@ -168,8 +168,8 @@
                 <img src="{{ asset('img/logo.jpg') }}">
             </div>
             <div class="sns">
-                <p class="url"><a href="https://line.me/ti/p/IlowhDaFpj" class="page-url">LINE<img src="{{ asset('img/line.11.jpg') }}"></a></p>
-                <p class="url"><a href="https://instagram.com/m_a_c_oita?igshid=MzRlODBiNWFlZA==" class="page-url">Instagram<img src="{{ asset('img/insta.11.jpg') }}"></a></p>
+                <p class="url"><a href="https://line.me/ti/p/IlowhDaFpj" class="page-url" target="_blank" rel="noopener noreferrer">LINE<img src="{{ asset('img/line.11.jpg') }}"></a></p>
+                <p class="url"><a href="https://instagram.com/m_a_c_oita?igshid=MzRlODBiNWFlZA==" class="page-url" target="_blank" rel="noopener noreferrer">Instagram<img src="{{ asset('img/insta.11.jpg') }}"></a></p>
             </div>
         </footer>
     </article>
