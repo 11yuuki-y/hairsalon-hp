@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\indexController;
+use App\Http\Controllers\HPController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,19 +21,19 @@ Route::get('/', function () {
 */
 
 
-Route::get('/', [indexController::class, 'index']);
+Route::get('/', [HPController::class, 'index']);
 
 
 // トップページ
-Route::get('/hp', [indexController::class, 'index'])->name('hp.index');
+Route::get('/hp', [HPController::class, 'index'])->name('hp.index');
 
 
 // menuページ
-Route::get('/hp/menu', [indexController::class, 'menu'])->name('hp.menu');
+Route::get('/hp/menu', [HPController::class, 'menu'])->name('hp.menu.index');
 
 // staffページ
-Route::get('hp/staff', [indexController::class, 'staff'])->name('hp.staff');
+Route::get('hp/staff', [HPController::class, 'staff'])->name('hp.staff.index');
 
 /*
-Route::resource('hp', indexController::class);
+Route::resource('hp', HPController::class);
 */
