@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HPController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,12 @@ Route::get('hp/staff', [HPController::class, 'staff'])->name('hp.staff.index');
 /*
 Route::resource('hp', HPController::class);
 */
+
+Auth::routes();
+
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.index');
+
+Auth::routes();
+
+Route::get('/admin/list', [App\Http\Controllers\HomeController::class, 'list'])->name('admin.list.index');
+

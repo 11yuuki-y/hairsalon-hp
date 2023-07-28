@@ -2,7 +2,7 @@
 
 @section('vite')
 @vite(['resources/css/app.css', 'resources/scss/hp/app.scss',
-'resources/scss/hp/index.scss','resources/scss/hp/footer.scss', 'resources/js/hp/app.js', 'resources/js/hp/index.js'])
+'resources/scss/hp/pc/index.scss', 'resources/scss/hp/sp/index.scss', 'resources/scss/hp/footer.scss', 'resources/js/hp/app.js', 'resources/js/hp/index.js'])
 @endsection
 
 @section('header')
@@ -45,16 +45,18 @@
                 <a class="page-link-menu" href="#Nail" onclick="document.getElementById('menu-btn').style.display = 'none'">Nail</a>
                 <a class="page-link-menu" href="#Accese" onclick="document.getElementById('menu-btn').style.display = 'none'">Accese</a>
             </div>
-
-            <p id="tx">ご予約はこちらから</p>
-            <div id="sns">
-                <p id="sns1">
-                    <a href="" class="line" target="_blank" rel="noopener noreferrer">LINE<img src="{{ asset('img/line.png') }}" alt="LINEのリンク"></a>
-                </p>
-                <p id="sns2">
-                    <a href="https://instagram.com/m_a_c_oita?igshid=MzRlODBiNWFlZA==" class="" target="_blank" rel="noopener noreferrer">Instagram<img src="{{ asset('img/insta.png') }}" alt="instaのリンク"></a>
-                </p>
+            <div id="box">
+                <p id="tx">【ご予約はこちらから】</p>
+                <div id="sns">
+                    <p id="sns1">
+                        <a href="" class="line" target="_blank" rel="noopener noreferrer">LINE<img src="{{ asset('img/line.png') }}" alt="LINEのリンク"></a>
+                    </p>
+                    <p id="sns2">
+                        <a href="https://instagram.com/m_a_c_oita?igshid=MzRlODBiNWFlZA==" class="insta" target="_blank" rel="noopener noreferrer">Instagram<img src="{{ asset('img/insta.png') }}" alt="instaのリンク"></a>
+                    </p>
+                </div>
             </div>
+
 
         </nav>
 

@@ -1,0 +1,419 @@
+// メディアクエリ タブレット
+@media screen and (max-width: 790px) {
+    // header-list
+    .header-list {
+        display: block;
+
+        .logo-img {
+            text-align: center;
+
+            .logo-name {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .page-link {
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    // header-group
+    .header-group {
+        // right-side
+        .right-side {
+            .meny-img {
+                width: 40px;
+            }
+        }
+    }
+
+    .slider img {
+        height: 71%;
+    }
+
+    // style Gallery
+    #Style-Gallery {
+        height: 530px;
+
+        .style-title {
+            font-size: 2.8rem;
+        }
+
+        .style-img-list {
+            li {
+                width: 120px;
+                height: auto;
+            }
+        }
+
+        .style-img-list2 {
+            li {
+                width: 120px;
+                height: auto;
+            }
+        }
+
+        .style-url {
+            .url {
+                img {
+                    width: 13px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    // concept
+    #Concept {
+        .concept-group {
+            .concept-img-list img {
+                margin-left: 10px;
+            }
+
+            .concept-item {
+                .concept-title {
+                    font-size: 2.8rem;
+                }
+
+                .concept-text {
+                    .tx {
+                        margin: 0;
+                        margin: 20px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // section-group
+    .section-group {
+        height: 250px;
+        #Menu {
+            width: 22%;
+
+            .menu-url {
+                .url {
+                    font-size: 1.6rem;
+                    border: 1px solid #000000;
+                    padding: 5px 15px;
+
+                    img {
+                        width: 13px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        #Staff {
+            width: 22%;
+
+            .staff-url {
+                .url {
+                    font-size: 1.6rem;
+                    border: 1px solid #000000;
+                    padding: 5px 15px;
+
+                    img {
+                        width: 13px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        #Nail {
+            width: 22%;
+
+            .nail-url {
+                text-align: center;
+                margin: 0;
+
+                .url {
+                    font-size: 1.6rem;
+                    border: 1px solid #000000;
+                    padding: 5px 15px;
+
+                    img {
+                        width: 13px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// メディアクエリ スマホ
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    header {
+        margin-bottom: 120px;
+
+        // header-list
+        .header-list {
+            .logo-img {
+                img {
+                    width: 120px;
+                    height: auto;
+                }
+
+                .logo-name {
+                    letter-spacing: normal;
+                }
+            }
+
+            .page-link {
+                a {
+                    letter-spacing: normal;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        // header-group
+        .header-group {
+            // right-side
+            .right-side {
+                .meny-img {
+                    width: 25px;
+                }
+
+                #menu-btn {
+                    width: 250px;
+
+                    #logo {
+                        .logo {
+                            margin-bottom: 20px;
+
+                            img {
+                                width: 120px;
+                            }
+                        }
+                    }
+
+                    #page-link-menu1 {
+                        .page-link-menu {
+                            letter-spacing: normal;
+                        }
+                    }
+
+                    #page-link-menu2 {
+                        .page-link-menu {
+                            letter-spacing: normal;
+                        }
+                    }
+
+                    #sns {
+                        margin: 5px;
+                        padding: 20px;
+
+                        #sns1 {
+                            width: 200px;
+
+                            .line {
+                                padding: 5px 20px;
+
+                                img {
+                                    width: 10px;
+                                }
+                            }
+                        }
+
+                        #sns2 {
+                            width: 200px;
+
+                            .insta {
+                                padding: 5px 20px;
+
+                                img {
+                                    width: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider img {
+            height: 88%;
+        }
+    }
+
+    // style Gallery
+    #Style-Gallery {
+        height: 300px;
+        margin-bottom: 120px;
+
+        .style-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .style-img-list {
+            li {
+                width: 60px;
+                height: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+
+        .style-img-list2 {
+            margin-bottom: 30px;
+
+            li {
+                width: 60px;
+                height: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+
+        .style-url {
+            .url {
+                border: 1px solid #000000;
+                padding: 5px 15px;
+
+                img {
+                    width: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    // concept
+    #Concept {
+        margin-bottom: 120px;
+        height: 220px;
+
+        .concept-group {
+            .concept-img-list img {
+                width: 30%;
+                height: 25%;
+                margin-left: 10px;
+            }
+
+            .concept-item {
+                .concept-title {
+                    font-size: 1.8rem;
+                    margin-left: 0;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+
+                .concept-text {
+                    .tx {
+                        font-size: 1.2rem;
+                        letter-spacing: normal;
+                        margin: 0;
+                        margin: 10px 20px 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    // section-group
+    .section-group {
+        height: 150px;
+        margin-bottom: 120px;
+
+        #Menu {
+            width: 23%;
+
+            .menu-img {
+                margin-bottom: 30px;
+            }
+
+            .menu-url {
+                .url {
+                    font-size: 1rem;
+                    border: 1px solid #000000;
+                    padding: 4px 10px;
+
+                    img {
+                        width: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        #Staff {
+            width: 23%;
+
+            .staff-img {
+                margin-bottom: 30px;
+            }
+
+            .staff-url {
+                .url {
+                    font-size: 1rem;
+                    border: 1px solid #000000;
+                    padding: 4px 10px;
+
+                    img {
+                        width: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        #Nail {
+            width: 23%;
+
+            .nail-img {
+                margin-bottom: 30px;
+            }
+
+            .nail-url {
+                text-align: center;
+                margin: 0;
+
+                .url {
+                    font-size: 1rem;
+                    border: 1px solid #000000;
+                    padding: 4px 10px;
+
+                    img {
+                        width: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // accese
+    #Accese {
+        margin-bottom: 50px;
+    }
+
+    // accese2
+    #Accese2 {
+        margin-bottom: 120px;
+
+        .logo-img {
+            width: 120px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .tr {
+            text-align: center;
+            letter-spacing: normal;
+            margin: 0;
+            margin: 10px 10px;
+        }
+    }
+}
