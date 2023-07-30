@@ -30,4 +30,14 @@ class HomeController extends Controller
     {
         return view('admin.list.index');
     }
+
+    public function register()
+    {
+        return view('admin.register.index');
+    }
+
+    public function login()
+    {
+        return view('auth.login');
+    }
 }

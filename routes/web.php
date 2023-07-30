@@ -21,9 +21,7 @@ Route::get('/', function () {
 });
 */
 
-
 Route::get('/', [HPController::class, 'index']);
-
 
 // トップページ
 Route::get('/hp', [HPController::class, 'index'])->name('hp.index');
@@ -47,3 +45,10 @@ Auth::routes();
 
 Route::get('/admin/list', [App\Http\Controllers\HomeController::class, 'list'])->name('admin.list.index');
 
+Auth::routes();
+
+Route::get('/admin/register', [App\Http\Controllers\HomeController::class, 'register'])->name('admin.register.index');
+
+Auth::routes();
+
+Route::get('/auth/login', [App\Http\Controllers\HomeController::class, 'login'])->name('auth.login');

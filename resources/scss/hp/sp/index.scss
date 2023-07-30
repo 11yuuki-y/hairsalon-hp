@@ -23,14 +23,32 @@
     .header-group {
         // right-side
         .right-side {
+            #menu-btn {
+                #sns {
+                    #sns1 {
+                        .line {
+                            img {
+                                width: 13px;
+                            }
+                        }
+                    }
+
+                    #sns2 {
+                        .insta {
+                            img {
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
             .meny-img {
                 width: 40px;
             }
         }
-    }
-
-    .slider img {
-        height: 71%;
+        .img-frame {
+            height: 85vh;
+        }
     }
 
     // style Gallery
@@ -100,7 +118,7 @@
                     padding: 5px 15px;
 
                     img {
-                        width: 13px;
+                        width: 15px;
                         margin-left: 20px;
                     }
                 }
@@ -117,7 +135,7 @@
                     padding: 5px 15px;
 
                     img {
-                        width: 13px;
+                        width: 15px;
                         margin-left: 20px;
                     }
                 }
@@ -149,7 +167,7 @@
 // メディアクエリ スマホ
 @media screen and (max-width: 600px) {
     body {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     header {
@@ -240,10 +258,9 @@
                     }
                 }
             }
+            .img-frame {
+            height: 87vh;
         }
-
-        .slider img {
-            height: 88%;
         }
     }
 

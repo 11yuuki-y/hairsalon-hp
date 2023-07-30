@@ -1,9 +1,5 @@
 @extends('admin.app')
 
-@section('vite')
-@vite(['resources/sass/admin/index.scss', 'resources/js/app.js'])
-@endsection
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

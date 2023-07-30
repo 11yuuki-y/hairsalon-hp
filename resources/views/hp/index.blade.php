@@ -1,8 +1,7 @@
 @extends('hp.commom')
 
 @section('vite')
-@vite(['resources/css/app.css', 'resources/scss/hp/app.scss',
-'resources/scss/hp/pc/index.scss', 'resources/scss/hp/sp/index.scss', 'resources/scss/hp/footer.scss', 'resources/js/hp/app.js', 'resources/js/hp/index.js'])
+@vite(['resources/scss/hp/app.scss', 'resources/scss/hp/footer.scss', 'resources/scss/hp/pc/index.scss', 'resources/scss/hp/sp/index.scss',])
 @endsection
 
 @section('header')
@@ -21,10 +20,15 @@
     </nav>
 </div>
 <div class="header-group">
-    <div class="slider">
+    <!--  <div class="slider">
         <img src="{{ asset('img/slider1.PNG') }}" alt="">
-        <img src="{{ asset('img/slider1.PNG') }}" alt="">
-        <img src="{{ asset('img/slider1.PNG') }}" alt="">
+        <img src="{{ asset('img/slider2.jpg') }}" alt="">
+        <img src="{{ asset('img/slider3.jpg') }}" alt="">
+    </div> -->
+    <div class="img-frame">
+        <div class="img-01"></div>
+        <div class="img-02"></div>
+        <div class="img-03"></div>
     </div>
     <div class="right-side">
         <img src="{{ asset('img/meny.png') }}" class="meny-img" alt="メニューボタン" onclick="document.getElementById('menu-btn').style.display = 'block'">
@@ -56,13 +60,9 @@
                     </p>
                 </div>
             </div>
-
-
         </nav>
-
         <p class="copy-right">&copy; 2023 hair salon M&Co.</p>
     </div>
-
 </div>
 @endsection
 
@@ -159,3 +159,5 @@
     </p>
 </section>
 @endsection
+
+@section('footer')

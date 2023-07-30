@@ -6,3 +6,26 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+
+
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+li {
+    list-style: none;
+}
