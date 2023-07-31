@@ -26,7 +26,6 @@ Route::get('/', [HPController::class, 'index']);
 // トップページ
 Route::get('/hp', [HPController::class, 'index'])->name('hp.index');
 
-
 // menuページ
 Route::get('/hp/menu', [HPController::class, 'menu'])->name('hp.menu.index');
 
@@ -37,18 +36,14 @@ Route::get('hp/staff', [HPController::class, 'staff'])->name('hp.staff.index');
 Route::resource('hp', HPController::class);
 */
 
+// adminトップページ
 Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.index');
 
-Auth::routes();
-
+// admin画像一覧ページ
 Route::get('/admin/list', [App\Http\Controllers\HomeController::class, 'list'])->name('admin.list.index');
 
-Auth::routes();
+// admin画像登録ページ
+Route::get('/admin/registration', [App\Http\Controllers\HomeController::class, 'registration'])->name('admin.registration.index');
 
-Route::get('/admin/register', [App\Http\Controllers\HomeController::class, 'register'])->name('admin.register.index');
-
-Auth::routes();
-
-Route::get('/auth/login', [App\Http\Controllers\HomeController::class, 'login'])->name('auth.login');

@@ -19,55 +19,55 @@
             <div class="img-list">
                 <div>
                     <p class="list-file">header1</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">header2</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">header3</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery1</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery2</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery3</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery4</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery5</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery6</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery7</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Style Gallery8</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Concept1</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Concept2</p>
-                    <a href="{{ route('admin.register.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index') }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">Concept3</p>

@@ -21,23 +21,22 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    // adminトップページ
     public function index()
     {
         return view('admin.index');
     }
 
+    // admin画像一覧ページ
     public function list()
     {
         return view('admin.list.index');
     }
 
-    public function register()
+    // admin画像登録ページ
+    public function registration()
     {
-        return view('admin.register.index');
-    }
-
-    public function login()
-    {
-        return view('auth.login');
+        return view('admin.registration.index');
     }
 }
