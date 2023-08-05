@@ -19,15 +19,15 @@
             <div class="img-list">
                 <div>
                     <p class="list-file">header1</p>
-                    <a href="{{ route('admin.registration.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index', ['url' => route('admin.header.store')]) }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">header2</p>
-                    <a href="{{ route('admin.registration.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index', ['url' => route('admin.header.store')]) }}">編集</a>
                 </div>
                 <div>
                     <p class="list-file">header3</p>
-                    <a href="{{ route('admin.registration.index') }}">編集</a>
+                    <a href="{{ route('admin.registration.index', ['url' => route('admin.header.store')]) }}">編集</a>
                 </div>
             </div>
         </div>

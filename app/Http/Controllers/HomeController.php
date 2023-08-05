@@ -47,8 +47,38 @@ class HomeController extends Controller
     }
 
     // admin画像登録ページ
-    public function registration()
+    public function registration(Request $request)
     {
-        return view('admin.registration.index');
+        /*
+        確認
+        dd($request->url);
+        */
+        
+        /*
+        compact関数使用の場合
+        $url = $request->url;
+        return view('admin.registration.index', compact('url'));
+        */
+
+        // array関数
+        return view('admin.registration.index', ['url' => $request->url]);
+    }
+
+    // // 編集ボタンを押した際にadmin headerページから表示したと判別する為のURL
+    public function headerstore() 
+    {
+
+    }
+
+    // // 編集ボタンを押した際にadmin stylegalleryページから表示したと判別する為のURL
+    public function stylegallerystore()
+    {
+
+    }
+
+    // // 編集ボタンを押した際にadmin conceptページから表示したと判別する為のURL
+    public function conceptstore()
+    {
+
     }
 }
