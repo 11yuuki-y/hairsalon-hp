@@ -28,10 +28,22 @@ class HomeController extends Controller
         return view('admin.index');
     }
 
-    // admin画像一覧ページ
-    public function list()
+    // admin headerページ
+    public function header()
     {
-        return view('admin.list.index');
+        return view('admin.header.index');
+    }
+
+    // admin stylegalleryページ
+    public function stylegallery()
+    {
+        return view('admin.stylegallery.index');
+    }
+
+    // admin conceptページ
+    public function concept()
+    {
+        return view('admin.concept.index');
     }
 
     // admin画像登録ページ

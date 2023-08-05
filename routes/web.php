@@ -41,9 +41,14 @@ Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.index');
 
-// admin画像一覧ページ
-Route::get('/admin/list', [App\Http\Controllers\HomeController::class, 'list'])->name('admin.list.index');
+// admin headerページ
+Route::get('/admin/header', [App\Http\Controllers\HomeController::class, 'header'])->name('admin.header.index');
+
+// admin style galleryページ
+Route::get('/admin/stylegallery',[App\Http\Controllers\HomeController::class, 'stylegallery'])->name('admin.stylegallery.index');
+
+// admin conceptページ
+Route::get('/admin/concept', [App\Http\Controllers\HomeController::class, 'concept'])->name('admin.concept.index');
 
 // admin画像登録ページ
 Route::get('/admin/registration', [App\Http\Controllers\HomeController::class, 'registration'])->name('admin.registration.index');
-

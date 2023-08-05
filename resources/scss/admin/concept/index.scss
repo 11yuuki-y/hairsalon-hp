@@ -57,11 +57,12 @@ main {
     .img-list {
         div {
             border: 1px solid #000000;
+            background-color: #ffffff;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 5px 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             p {
                 margin: 0;
@@ -70,6 +71,10 @@ main {
             a {
                 color: #000000;
             }
+        }
+        div:nth-child(2n){
+            color: #ffffff;
+            background-color: #4d4d4d;
         }
     }
 }
