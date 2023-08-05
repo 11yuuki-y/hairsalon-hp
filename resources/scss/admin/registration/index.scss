@@ -15,7 +15,8 @@ main {
     }
 }
 
-.file {
+form {
+    .file {
     height: 600px;
     display: flex;
     justify-content: center;
@@ -26,28 +27,25 @@ main {
     }
 }
 
-.register {
+.button {
     text-align: center;
     margin: 0;
-
-    a {
-        color: #000000;
-        border: 1px solid #000000;
-        padding: 10px 40px;
-    }
+}
 }
 
 // / メディアクエリ スマホ
 @media screen and (max-width: 600px) {
     .wrapper {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 10px;
     }
 
-    .file {
+    form {
+        .file {
         label {
             margin-right: 10px;
         }
+    }
     }
 
 }

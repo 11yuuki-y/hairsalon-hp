@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HPController extends Controller
+class HpController extends Controller
 {
     // トップページ
     public function index()
