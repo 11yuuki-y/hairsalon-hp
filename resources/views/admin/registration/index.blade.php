@@ -10,7 +10,7 @@
         <div class="back">
             <a href="{{ route('admin.header.index') }}">&lt; 戻る</a>
         </div>
-        <form action="{{ $url }}" method="post">
+        <form action="{{ $url }}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="file">
                 <label for="img">画像</label>

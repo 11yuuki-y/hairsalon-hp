@@ -20,11 +20,6 @@
     </nav>
 </div>
 <div class="header-group">
-    <!--  <div class="slider">
-        <img src="{{ asset('img/slider1.PNG') }}" alt="">
-        <img src="{{ asset('img/slider2.jpg') }}" alt="">
-        <img src="{{ asset('img/slider3.jpg') }}" alt="">
-    </div> -->
     <div class="img-frame">
         <div class="img-01"></div>
         <div class="img-02"></div>
@@ -87,9 +82,14 @@
 <section id="Concept">
     <div class="concept-group">
         <div class="concept-img-list">
-            <img src="{{ asset('img/concept1.PNG') }}" alt="">
-            <img src="{{ asset('img/concept2.PNG') }}" alt="">
-            <img src="{{ asset('img/concept1.PNG') }}" alt="">
+            <!-- 
+            <img src="{{ asset('$concept->storage/concept/concept1.PNG') }}" alt="">
+            <img src="{{ asset('$concept->storage/concept/concept2.PNG') }}" alt="">
+            <img src="{{ asset('$concept->storage/concept/concept1.PNG') }}" alt=""> 
+            -->
+            <img src="{{asset('img/concept1.PNG') }}" alt="">
+            <img src="{{asset('img/concept2.PNG') }}" alt="">
+            <img src="{{asset('img/concept1.PNG') }}" alt="">
         </div>
         <div class="concept-item">
             <h2 class="concept-title">Concept</h2>

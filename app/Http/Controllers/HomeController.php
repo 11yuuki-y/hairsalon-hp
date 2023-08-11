@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Header;
+use App\Models\StyleGallery;
+use App\Models\Concept;
 
 class HomeController extends Controller
 {
@@ -53,7 +56,7 @@ class HomeController extends Controller
         確認
         dd($request->url);
         */
-        
+
         /*
         compact関数使用の場合
         $url = $request->url;
@@ -65,20 +68,67 @@ class HomeController extends Controller
     }
 
     // // 編集ボタンを押した際にadmin headerページから表示したと判別する為のURL
-    public function headerstore() 
+    public function headerstore(Request $request)
     {
+        // ディレクトリ名
+        $dir = 'header';
 
+        // アップロードされたファイル名を取得
+        $file_name = $request->file('img')->getClientOriginalName();
+
+        // 取得したファイル名で保存
+        $request->file('img')->storeAs('public/' . $dir, $file_name);
+
+        // ファイル情報をDBで保存
+        $header = new Header();
+        $header->name = $file_name;
+        $header->path = 'storage/' . $dir . '/' . $file_name;
+        $header->save();
+
+        return redirect('/admin/header');
     }
 
     // // 編集ボタンを押した際にadmin stylegalleryページから表示したと判別する為のURL
-    public function stylegallerystore()
+    public function stylegallerystore(Request $request)
     {
+        // ディレクトリ名
+        $dir = 'stylegallery';
 
+        // アップロードされたファイル名を取得
+        $file_name = $request->file('img')->getClientOriginalName();
+
+        // 取得したファイル名で保存
+        $request->file('img')->storeAs('public/' . $dir, $file_name);
+
+        // ファイル情報をDBで保存
+
+        // ファイル情報をDBで保存
+        $stylegallery = new StyleGallery();
+        $stylegallery->name = $file_name;
+        $stylegallery->path = 'storage/' . $dir . '/' . $file_name;
+        $stylegallery->save();
+
+        return redirect('/admin/stylegallery');
     }
 
     // // 編集ボタンを押した際にadmin conceptページから表示したと判別する為のURL
-    public function conceptstore()
+    public function conceptstore(Request $request)
     {
+        // ディレクトリ名
+        $dir = 'concept';
 
+        // アップロードされたファイル名を取得
+        $file_name = $request->file('img')->getClientOriginalName();
+
+        // 取得したファイル名で保存
+        $request->file('img')->storeAs('public/' . $dir, $file_name);
+
+        // ファイル情報をDBで保存
+        $concept = new Concept();
+        $concept->name = $file_name;
+        $concept->path = 'storage/' . $dir . '/' . $file_name;
+        $concept->save();
+
+        return redirect('/admin/concept');
     }
 }

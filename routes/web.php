@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HPController;
+use App\Http\Controllers\HpController;
 use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,24 +22,23 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', [HPController::class, 'index']);
+Route::get('/', [HpController::class, 'index']);
 
 // トップページ
-Route::get('/hp', [HPController::class, 'index'])->name('hp.index');
+Route::get('/hp', [HpController::class, 'index'])->name('hp.index');
 
 // menuページ
-Route::get('/hp/menu', [HPController::class, 'menu'])->name('hp.menu.index');
+Route::get('/hp/menu', [HpController::class, 'menu'])->name('hp.menu.index');
 
 // staffページ
-Route::get('hp/staff', [HPController::class, 'staff'])->name('hp.staff.index');
+Route::get('hp/staff', [HpController::class, 'staff'])->name('hp.staff.index');
 
 /*
-Route::resource('hp', HPController::class);
+Route::resource('hp', HpController::class);
 */
 
 // adminトップページ
 Auth::routes();
-
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.index');
 

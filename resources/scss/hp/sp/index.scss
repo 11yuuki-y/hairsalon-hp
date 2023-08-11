@@ -1,5 +1,5 @@
 // メディアクエリ タブレット
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 825px) {
     // header-list
     .header-list {
         display: block;
@@ -21,6 +21,10 @@
 
     // header-group
     .header-group {
+        .img-frame {
+            height: 85vh;
+        }
+
         // right-side
         .right-side {
             #menu-btn {
@@ -45,9 +49,6 @@
             .meny-img {
                 width: 40px;
             }
-        }
-        .img-frame {
-            height: 85vh;
         }
     }
 
@@ -164,7 +165,7 @@
 }
 
 // メディアクエリ スマホ
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     body {
         font-size: 1.25rem;
     }
@@ -196,6 +197,10 @@
 
         // header-group
         .header-group {
+            .img-frame {
+                height: 87vh;
+            }
+
             // right-side
             .right-side {
                 .meny-img {
@@ -257,9 +262,6 @@
                     }
                 }
             }
-            .img-frame {
-            height: 87vh;
-        }
         }
     }
 
