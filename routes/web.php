@@ -42,9 +42,6 @@ Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.index');
 
-// admin headerページ
-Route::get('/admin/header', [App\Http\Controllers\HomeController::class, 'header'])->name('admin.header.index');
-
 // admin stylegalleryページ
 Route::get('/admin/stylegallery',[App\Http\Controllers\HomeController::class, 'stylegallery'])->name('admin.stylegallery.index');
 
@@ -53,9 +50,6 @@ Route::get('/admin/concept', [App\Http\Controllers\HomeController::class, 'conce
 
 // admin画像登録ページ
 Route::get('/admin/registration', [App\Http\Controllers\HomeController::class, 'registration'])->name('admin.registration.index');
-
-// 編集ボタンを押した際にadmin headerページから表示したと判別する為のURL
-Route::post('/admin/header/store', [App\Http\Controllers\HomeController::class, 'headerstore'])->name('admin.header.store');
 
 // 編集ボタンを押した際にadmin stylegalleryページから表示したと判別する為のURL
 Route::post('/admin/stylegallery/store', [App\Http\Controllers\HomeController::class, 'stylegallerystore'])->name('admin.stylegallery.store');

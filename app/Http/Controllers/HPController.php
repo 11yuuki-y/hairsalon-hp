@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Concept;
+use App\Models\StyleGallery;
 
 class HpController extends Controller
 {
     // トップページ
     public function index()
     {
-        return view('hp.index');
+        $concept = Concept::all();
+        $stylegallery = StyleGallery::all();
+        return view('hp.index', compact('concept', 'stylegallery'));
     }
 
     //  menuページ

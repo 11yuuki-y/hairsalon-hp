@@ -8,7 +8,7 @@
 <main>
     <div class="wrapper">
         <div class="back">
-            <a href="{{ route('admin.header.index') }}">&lt; 戻る</a>
+            <a href="{{ route('admin.stylegallery.index') }}">&lt; 戻る</a>
         </div>
         <form action="{{ $url }}" method="post" enctype="multipart/form-data">
             @csrf

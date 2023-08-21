@@ -1,7 +1,8 @@
 @extends('hp.commom')
 
 @section('vite')
-@vite(['resources/scss/hp/app.scss', 'resources/scss/hp/footer.scss', 'resources/scss/hp/pc/index.scss', 'resources/scss/hp/sp/index.scss',])
+@vite(['resources/scss/hp/app.scss', 'resources/scss/hp/footer.scss', 'resources/scss/hp/pc/index.scss',
+'resources/scss/hp/sp/index.scss',])
 @endsection
 
 @section('header')
@@ -82,14 +83,9 @@
 <section id="Concept">
     <div class="concept-group">
         <div class="concept-img-list">
-            <!-- 
-            <img src="{{ asset('$concept->storage/concept/concept1.PNG') }}" alt="">
-            <img src="{{ asset('$concept->storage/concept/concept2.PNG') }}" alt="">
-            <img src="{{ asset('$concept->storage/concept/concept1.PNG') }}" alt=""> 
-            -->
-            <img src="{{asset('img/concept1.PNG') }}" alt="">
-            <img src="{{asset('img/concept2.PNG') }}" alt="">
-            <img src="{{asset('img/concept1.PNG') }}" alt="">
+            <img src="{{ asset('$concept->storage/stylegallery/style1.jpg') }}">
+            <img src="{{ asset('$concept->storage/stylegallery/style1.jpg') }}">
+            <img src="{{ asset('$concept->storage/stylegallery/style1.jpg') }}">
         </div>
         <div class="concept-item">
             <h2 class="concept-title">Concept</h2>

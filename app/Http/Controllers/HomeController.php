@@ -31,12 +31,6 @@ class HomeController extends Controller
         return view('admin.index');
     }
 
-    // admin headerページ
-    public function header()
-    {
-        return view('admin.header.index');
-    }
-
     // admin stylegalleryページ
     public function stylegallery()
     {
@@ -66,29 +60,9 @@ class HomeController extends Controller
         // array関数
         return view('admin.registration.index', ['url' => $request->url]);
     }
+    
 
-    // // 編集ボタンを押した際にadmin headerページから表示したと判別する為のURL
-    public function headerstore(Request $request)
-    {
-        // ディレクトリ名
-        $dir = 'header';
-
-        // アップロードされたファイル名を取得
-        $file_name = $request->file('img')->getClientOriginalName();
-
-        // 取得したファイル名で保存
-        $request->file('img')->storeAs('public/' . $dir, $file_name);
-
-        // ファイル情報をDBで保存
-        $header = new Header();
-        $header->name = $file_name;
-        $header->path = 'storage/' . $dir . '/' . $file_name;
-        $header->save();
-
-        return redirect('/admin/header');
-    }
-
-    // // 編集ボタンを押した際にadmin stylegalleryページから表示したと判別する為のURL
+    // 編集ボタンを押した際にadmin stylegalleryページから表示したと判別する為のURL
     public function stylegallerystore(Request $request)
     {
         // ディレクトリ名
@@ -101,8 +75,6 @@ class HomeController extends Controller
         $request->file('img')->storeAs('public/' . $dir, $file_name);
 
         // ファイル情報をDBで保存
-
-        // ファイル情報をDBで保存
         $stylegallery = new StyleGallery();
         $stylegallery->name = $file_name;
         $stylegallery->path = 'storage/' . $dir . '/' . $file_name;
@@ -111,7 +83,7 @@ class HomeController extends Controller
         return redirect('/admin/stylegallery');
     }
 
-    // // 編集ボタンを押した際にadmin conceptページから表示したと判別する為のURL
+    // 編集ボタンを押した際にadmin conceptページから表示したと判別する為のURL
     public function conceptstore(Request $request)
     {
         // ディレクトリ名
