@@ -67,15 +67,15 @@
     <h2 class="style-title">Style Gallery</h2>
     <ui class="style-img-list">
         <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
-        <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
-        <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
-        <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
+        <li><img src="{{ asset('img/style2.jpg') }}" alt="カット後の女性写真"></li>
+        <li><img src="{{ asset('img/style3.jpg') }}" alt="カット後の女性写真"></li>
+        <li><img src="{{ asset('img/style4.jpg') }}" alt="カット後の女性写真"></li>
     </ui>
     <ui class="style-img-list2">
-        <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
-        <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
-        <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
-        <li><img src="{{ asset('img/style1.jpg') }}" alt="カット後の女性写真"></li>
+        <li><img src="{{ asset('img/style5.jpg') }}" alt="カット後の女性写真"></li>
+        <li><img src="{{ asset('img/style6.jpg') }}" alt="カット後の男性写真"></li>
+        <li><img src="{{ asset('img/style7.jpg') }}" alt="カット後の男性写真"></li>
+        <li><img src="{{ asset('img/style8.jpg') }}" alt="カット後の男性写真"></li>
     </ui>
     <p class="style-url"><a href="https://instagram.com/m_a_c_oita?igshid=MzRlODBiNWFlZA==" class="url" target="_blank" rel="noopener noreferrer">Instagram<img src="{{ asset('img/insta.png') }}" alt="instaのリンク"></a></p>
 </section>
@@ -83,9 +83,14 @@
 <section id="Concept">
     <div class="concept-group">
         <div class="concept-img-list">
-            <img src="{{ asset('$concept->storage/concept/concept1.PNG') }}" alt="ドライフラワーの写真">
-            <img src="{{ asset('$concept->storage/concept/concept2.PNG') }}" alt="ロウソクの写真">
-            <img src="{{ asset('$concept->storage/concept/concept1.PNG') }}" alt="ドライフラワーの写真">
+            {{--
+            <img src="{{ asset('$concept->storage/concept/concept1.png') }}" alt="ドライフラワーの写真">
+            <img src="{{ asset('$concept->storage/concept/concept2.png') }}" alt="ロウソクの写真">
+            <img src="{{ asset('$concept->storage/concept/concept3.jpg') }}" alt="カボチャの写真">
+            --}}
+            <img src="{{ asset('img/concept1.png') }}" alt="ドライフラワーの写真">
+            <img src="{{ asset('img/concept2.png') }}" alt="ロウソクの写真">
+            <img src="{{ asset('img/concept3.jpg') }}" alt="カボチャの写真">
         </div>
         <div class="concept-item">
             <h2 class="concept-title">Concept</h2>
@@ -107,21 +112,21 @@
 <div class="section-group">
     <section id="Menu">
         <div class="menu-img">
-            <img src="{{asset('img/concept1.PNG') }}" alt="ドライフラワーの写真">
+            <img src="{{asset('img/menu.jpg') }}" alt="看板の写真">
         </div>
         <p class="menu-url"><a href="{{ route('hp.menu.index') }} " class="url" target="_blank" rel="noopener noreferrer">Menu<img src="{{ asset('img/tab.jpg') }}" alt="別タブのリンク"></a></p>
     </section>
 
     <section id="Staff">
         <div class="staff-img">
-            <img src="{{asset('img/concept1.PNG') }}" alt="ドライフラワーの写真">
+            <img src="{{asset('img/staff.jpg') }}" alt="男性の写真">
         </div>
         <p class="staff-url"><a href="{{ route('hp.staff.index') }}" class="url" target="_blank" rel="noopener noreferrer">Staff<img src="{{ asset('img/tab.jpg') }}" alt="別タブのリンク"></a></p>
     </section>
 
     <section id="Nail">
         <div class="nail-img">
-            <img src="{{asset('img/concept1.PNG') }}" alt="ドライフラワーの写真">
+            <img src="{{asset('img/nail.jpg') }}" alt="ネイルの写真">
         </div>
         <p class="nail-url"><a href="https://instagram.com/m_and_co.nail?igshid=MzRlODBiNWFlZA==" class="url" target="_blank" rel="noopener noreferrer">Nail<img src="{{ asset('img/insta.png') }}" alt="" instaのリンク></a></p>
     </section>

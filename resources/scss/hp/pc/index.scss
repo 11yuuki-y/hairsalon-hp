@@ -57,7 +57,7 @@
     }
 
     .img-01 {
-        background-image: url("/public/img/slider1.PNG");
+        background-image: url("/public/img/slider1.png");
         animation: slide-animation-01 24s infinite;
     }
 
@@ -250,7 +250,7 @@
 // style Gallery
 #Style-Gallery {
     text-align: center;
-    height: 755px;
+    height: 700px;
     margin-bottom: 200px;
 
     .style-title {
@@ -266,10 +266,14 @@
         margin-bottom: 20px;
 
         li {
-            width: 200px;
-            height: auto;
             margin-left: 20px;
             margin-right: 20px;
+
+            img {
+                object-fit: cover;
+                width: 200px;
+                height: 230px;
+            }
         }
     }
 
@@ -280,10 +284,14 @@
         margin-bottom: 50px;
 
         li {
-            width: 200px;
-            height: auto;
             margin-left: 20px;
             margin-right: 20px;
+
+            img {
+                object-fit: cover;
+                width: 200px;
+                height: 230px;
+            }
         }
     }
 
@@ -313,11 +321,18 @@
         justify-content: center;
 
         .concept-img-list {
-            width: 40%;
-            height: 40%;
+            margin-right: 150px;
+
+            img {
+                object-fit: cover;
+                width: 300px;
+                height: 350px;
+            }
         }
 
         .concept-item {
+            margin-left: 200px;
+
             .concept-title {
                 font-size: 3.8rem;
                 letter-spacing: 0.1rem;
@@ -378,14 +393,21 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 400px;
+    height: 350px;
     margin-bottom: 200px;
 
     #Menu {
         width: 25%;
 
         .menu-img {
+            text-align: center;
             margin-bottom: 50px;
+
+            img {
+                object-fit: cover;
+                width: 250px;
+                height: 220px;
+            }
         }
 
         .menu-url {
@@ -407,7 +429,14 @@
         width: 25%;
 
         .staff-img {
+            text-align: center;
             margin-bottom: 50px;
+
+            img {
+                object-fit: cover;
+                width: 250px;
+                height: 220px;
+            }
         }
 
         .staff-url {
@@ -429,7 +458,14 @@
         width: 25%;
 
         .nail-img {
+            text-align: center;
             margin-bottom: 50px;
+
+            img {
+                object-fit: cover;
+                width: 250px;
+                height: 220px;
+            }
         }
 
         .nail-url {

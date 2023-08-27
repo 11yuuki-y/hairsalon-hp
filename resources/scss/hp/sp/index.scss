@@ -54,7 +54,7 @@
 
     // style Gallery
     #Style-Gallery {
-        height: 530px;
+        height: 580px;
 
         .style-title {
             font-size: 2.8rem;
@@ -62,15 +62,21 @@
 
         .style-img-list {
             li {
-                width: 120px;
-                height: auto;
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 180px;
+                }
             }
         }
 
         .style-img-list2 {
             li {
-                width: 120px;
-                height: auto;
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 180px;
+                }
             }
         }
 
@@ -86,12 +92,20 @@
 
     // concept
     #Concept {
+        height: 320px;
         .concept-group {
-            .concept-img-list img {
-                margin-left: 10px;
+            .concept-img-list {
+                margin-right: 120px;
+
+                img {
+                    width: 250px;
+                    height: 320px;
+                }
             }
 
             .concept-item {
+                margin-left: 150px;
+
                 .concept-title {
                     font-size: 2.8rem;
                 }
@@ -107,7 +121,6 @@
 
     // section-group
     .section-group {
-        height: 250px;
         #Menu {
             width: 22%;
 
@@ -267,7 +280,7 @@
 
     // style Gallery
     #Style-Gallery {
-        height: 300px;
+        height: 350px;
         margin-bottom: 120px;
 
         .style-title {
@@ -276,11 +289,17 @@
         }
 
         .style-img-list {
+            margin-bottom: 10px;
+
             li {
-                width: 60px;
-                height: auto;
                 margin-left: 5px;
                 margin-right: 5px;
+
+                img {
+                    object-fit: cover;
+                    width: 60px;
+                    height: 100px;
+                }
             }
         }
 
@@ -288,10 +307,14 @@
             margin-bottom: 30px;
 
             li {
-                width: 60px;
-                height: auto;
                 margin-left: 5px;
                 margin-right: 5px;
+
+                img {
+                    object-fit: cover;
+                    width: 60px;
+                    height: 100px;
+                }
             }
         }
 
@@ -311,16 +334,22 @@
     // concept
     #Concept {
         margin-bottom: 120px;
-        height: 220px;
+        height: 180px;
 
         .concept-group {
-            .concept-img-list img {
-                width: 30%;
-                height: 25%;
+            .concept-img-list {
+                margin-right: 40px;
                 margin-left: 10px;
+
+                img {
+                    width: 100px;
+                    height: 180px;
+                }
             }
 
             .concept-item {
+                margin-left: 80px;
+
                 .concept-title {
                     font-size: 1.8rem;
                     margin-left: 0;
@@ -342,7 +371,7 @@
 
     // section-group
     .section-group {
-        height: 150px;
+        height: 200px;
         margin-bottom: 120px;
 
         #Menu {
@@ -350,6 +379,12 @@
 
             .menu-img {
                 margin-bottom: 30px;
+
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 100px;
+                }
             }
 
             .menu-url {
@@ -371,6 +406,12 @@
 
             .staff-img {
                 margin-bottom: 30px;
+
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 100px;
+                }
             }
 
             .staff-url {
@@ -392,6 +433,12 @@
 
             .nail-img {
                 margin-bottom: 30px;
+
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 100px;
+                }
             }
 
             .nail-url {
