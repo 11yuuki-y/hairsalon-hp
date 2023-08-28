@@ -1,0 +1,51 @@
+main {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 100%;
+}
+
+.back {
+    a {
+        color: #000000;
+    }
+}
+
+form {
+    .file {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        margin-right: 20px;
+    }
+}
+
+.button {
+    text-align: center;
+    margin: 0;
+}
+}
+
+// / メディアクエリ スマホ
+@media screen and (max-width: 600px) {
+    .wrapper {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    form {
+        .file {
+        label {
+            margin-right: 10px;
+        }
+    }
+    }
+
+}

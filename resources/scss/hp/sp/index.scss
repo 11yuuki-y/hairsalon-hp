@@ -1,0 +1,482 @@
+// メディアクエリ タブレット
+@media screen and (max-width: 825px) {
+    // header-list
+    .header-list {
+        display: block;
+
+        .logo-img {
+            text-align: center;
+
+            .logo-name {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .page-link {
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    // header-group
+    .header-group {
+        .img-frame {
+            height: 85vh;
+        }
+
+        // right-side
+        .right-side {
+            #menu-btn {
+                #sns {
+                    #sns1 {
+                        .line {
+                            img {
+                                width: 13px;
+                            }
+                        }
+                    }
+
+                    #sns2 {
+                        .insta {
+                            img {
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .meny-img {
+                width: 40px;
+            }
+        }
+    }
+
+    // style Gallery
+    #Style-Gallery {
+        height: 580px;
+
+        .style-title {
+            font-size: 2.8rem;
+        }
+
+        .style-img-list {
+            li {
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 180px;
+                }
+            }
+        }
+
+        .style-img-list2 {
+            li {
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 180px;
+                }
+            }
+        }
+
+        .style-url {
+            .url {
+                img {
+                    width: 13px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    // concept
+    #Concept {
+        height: 320px;
+        .concept-group {
+            .concept-img-list {
+                margin-right: 120px;
+
+                img {
+                    width: 250px;
+                    height: 320px;
+                }
+            }
+
+            .concept-item {
+                margin-left: 150px;
+
+                .concept-title {
+                    font-size: 2.8rem;
+                }
+
+                .concept-text {
+                    .tx {
+                        margin: 20px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // section-group
+    .section-group {
+        #Menu {
+            width: 22%;
+
+            .menu-url {
+                .url {
+                    font-size: 1.6rem;
+                    border: 1px solid #000000;
+                    padding: 5px 15px;
+
+                    img {
+                        width: 15px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        #Staff {
+            width: 22%;
+
+            .staff-url {
+                .url {
+                    font-size: 1.6rem;
+                    border: 1px solid #000000;
+                    padding: 5px 15px;
+
+                    img {
+                        width: 15px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        #Nail {
+            width: 22%;
+
+            .nail-url {
+                text-align: center;
+                margin: 0;
+
+                .url {
+                    font-size: 1.6rem;
+                    border: 1px solid #000000;
+                    padding: 5px 15px;
+
+                    img {
+                        width: 13px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// メディアクエリ スマホ
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    header {
+        margin-bottom: 120px;
+
+        // header-list
+        .header-list {
+            .logo-img {
+                img {
+                    width: 120px;
+                    height: auto;
+                }
+
+                .logo-name {
+                    letter-spacing: normal;
+                }
+            }
+
+            .page-link {
+                a {
+                    letter-spacing: normal;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        // header-group
+        .header-group {
+            .img-frame {
+                height: 87vh;
+            }
+
+            // right-side
+            .right-side {
+                .meny-img {
+                    width: 25px;
+                }
+
+                #menu-btn {
+                    width: 250px;
+
+                    #logo {
+                        .logo {
+                            margin-bottom: 20px;
+
+                            img {
+                                width: 120px;
+                            }
+                        }
+                    }
+
+                    #page-link-menu1 {
+                        .page-link-menu {
+                            letter-spacing: normal;
+                        }
+                    }
+
+                    #page-link-menu2 {
+                        .page-link-menu {
+                            letter-spacing: normal;
+                        }
+                    }
+
+                    #sns {
+                        margin: 5px;
+                        padding: 20px;
+
+                        #sns1 {
+                            width: 200px;
+
+                            .line {
+                                padding: 5px 20px;
+
+                                img {
+                                    width: 10px;
+                                }
+                            }
+                        }
+
+                        #sns2 {
+                            width: 200px;
+
+                            .insta {
+                                padding: 5px 20px;
+
+                                img {
+                                    width: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // style Gallery
+    #Style-Gallery {
+        height: 350px;
+        margin-bottom: 120px;
+
+        .style-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .style-img-list {
+            margin-bottom: 10px;
+
+            li {
+                margin-left: 5px;
+                margin-right: 5px;
+
+                img {
+                    object-fit: cover;
+                    width: 60px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .style-img-list2 {
+            margin-bottom: 30px;
+
+            li {
+                margin-left: 5px;
+                margin-right: 5px;
+
+                img {
+                    object-fit: cover;
+                    width: 60px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .style-url {
+            .url {
+                border: 1px solid #000000;
+                padding: 5px 15px;
+
+                img {
+                    width: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    // concept
+    #Concept {
+        margin-bottom: 120px;
+        height: 180px;
+
+        .concept-group {
+            .concept-img-list {
+                margin-right: 40px;
+                margin-left: 10px;
+
+                img {
+                    width: 100px;
+                    height: 180px;
+                }
+            }
+
+            .concept-item {
+                margin-left: 80px;
+
+                .concept-title {
+                    font-size: 1.8rem;
+                    margin-left: 0;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+
+                .concept-text {
+                    .tx {
+                        font-size: 1.2rem;
+                        letter-spacing: normal;
+                        margin: 0;
+                        margin: 10px 20px 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    // section-group
+    .section-group {
+        height: 200px;
+        margin-bottom: 120px;
+
+        #Menu {
+            width: 23%;
+
+            .menu-img {
+                margin-bottom: 30px;
+
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 100px;
+                }
+            }
+
+            .menu-url {
+                .url {
+                    font-size: 1rem;
+                    border: 1px solid #000000;
+                    padding: 4px 10px;
+
+                    img {
+                        width: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        #Staff {
+            width: 23%;
+
+            .staff-img {
+                margin-bottom: 30px;
+
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 100px;
+                }
+            }
+
+            .staff-url {
+                .url {
+                    font-size: 1rem;
+                    border: 1px solid #000000;
+                    padding: 4px 10px;
+
+                    img {
+                        width: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        #Nail {
+            width: 23%;
+
+            .nail-img {
+                margin-bottom: 30px;
+
+                img {
+                    object-fit: cover;
+                    width: 120px;
+                    height: 100px;
+                }
+            }
+
+            .nail-url {
+                text-align: center;
+
+                .url {
+                    font-size: 1rem;
+                    border: 1px solid #000000;
+                    padding: 4px 10px;
+
+                    img {
+                        width: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // accese
+    #Accese {
+        margin-bottom: 50px;
+    }
+
+    // accese2
+    #Accese2 {
+        margin-bottom: 120px;
+
+        .logo-img {
+            width: 120px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .tr {
+            text-align: center;
+            letter-spacing: normal;
+            margin: 10px 10px;
+        }
+    }
+}
