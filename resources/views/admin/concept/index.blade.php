@@ -8,7 +8,7 @@
 <main>
     <div class="wrapper">
         <div class="meny">
-            <p class="meny1"><a href="#" class="meny-img"><img src="{{ asset('img/gazou.png') }}" alt="image画像">画像管理</a></p>
+            <p class="meny1"><a href="#" class="meny-img"><img src="{{ asset('img/gazou.png') }}" alt="画像">画像編集</a></p>
             <p class="meny2"><a href="{{ route('admin.stylegallery.index') }}" class="meny-tx">・Style Gallery</a></p>
             <p class="meny2"><a href="{{ route('admin.concept.index') }}" class="meny-tx">・Concept</a></p>
         </div>
